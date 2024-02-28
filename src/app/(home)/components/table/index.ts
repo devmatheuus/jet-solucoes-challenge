@@ -1,4 +1,5 @@
 import { TableBody } from "./TableBody";
+import { TableDataItem } from "./TableDataItem";
 import { TableHead } from "./TableHead";
 import { TableHeaderItem } from "./TableHeaderItem";
 import { TableRoot } from "./TableRoot";
@@ -10,4 +11,5 @@ export const Table = {
   Row: TableRow,
   HeaderItem: TableHeaderItem,
   Body: TableBody,
+  DataItem: TableDataItem,
 };
