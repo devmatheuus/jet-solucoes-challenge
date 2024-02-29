@@ -37,7 +37,7 @@ const Home: React.FC = () => {
           </Table.Head>
 
           <Table.Body>
-            {cars.map((i, index) => (
+            {cars.map((car, index) => (
               <Table.Row
                 className={`border-b border-t border-b-gray-200 border-t-gray-200 px-2 ${
                   index === cars.length - 1 ? "rounded-xl border-none" : ""
@@ -46,19 +46,24 @@ const Home: React.FC = () => {
               >
                 <Table.DataItem>
                   <Wrapper className="flex items-center gap-2">
-                    <Image src={i.img} alt={i.name} width={50} height={50} />
-                    <h2 className="font-medium">{i.name}</h2>
+                    <Image
+                      src={car.img}
+                      alt={car.name}
+                      width={50}
+                      height={50}
+                    />
+                    <h2 className="font-medium">{car.name}</h2>
                   </Wrapper>
                 </Table.DataItem>
                 <Table.DataItem className="text-base text-gray-500">
-                  <span>{mapperReservationDate(i.startReservationDate)}</span> -{" "}
-                  <span>{mapperReservationDate(i.endReservationDate)}</span>
+                  <span>{mapperReservationDate(car.startReservationDate)}</span>{" "}
+                  - <span>{mapperReservationDate(car.endReservationDate)}</span>
                 </Table.DataItem>
                 <Table.DataItem>
-                  <Badge text={i.status} />
+                  <Badge text={car.status} />
                 </Table.DataItem>
                 <Table.DataItem>
-                  <StarsRating rating={+i.rating} />
+                  <StarsRating rating={+car.rating} />
                 </Table.DataItem>
                 <Table.DataItem>
                   <button
