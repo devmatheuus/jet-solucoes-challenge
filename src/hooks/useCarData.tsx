@@ -18,7 +18,7 @@ export const useCarData = (): Record<string, ICarData[]> => {
       startReservationDate: new Date("2024-07-6"),
       endReservationDate: new Date("2024-07-012"),
       status: "Available",
-      rating: "4.5",
+      rating: "1",
     },
     {
       img: carImage,
@@ -26,7 +26,7 @@ export const useCarData = (): Record<string, ICarData[]> => {
       startReservationDate: new Date("2024-07-6"),
       endReservationDate: new Date("2024-07-012"),
       status: "Available",
-      rating: "4.5",
+      rating: "1.5",
     },
     {
       img: carImage,
@@ -34,7 +34,7 @@ export const useCarData = (): Record<string, ICarData[]> => {
       startReservationDate: new Date("2024-07-6"),
       endReservationDate: new Date("2024-07-012"),
       status: "Available",
-      rating: "4.5",
+      rating: "2.5",
     },
     {
       img: carImage,
@@ -42,7 +42,7 @@ export const useCarData = (): Record<string, ICarData[]> => {
       startReservationDate: new Date("2024-07-6"),
       endReservationDate: new Date("2024-07-012"),
       status: "Available",
-      rating: "4.5",
+      rating: "3.5",
     },
     {
       img: carImage,
@@ -50,7 +50,7 @@ export const useCarData = (): Record<string, ICarData[]> => {
       startReservationDate: new Date("2024-07-6"),
       endReservationDate: new Date("2024-07-012"),
       status: "Unavailable",
-      rating: "4.5",
+      rating: "4",
     },
     {
       img: carImage,
@@ -58,7 +58,7 @@ export const useCarData = (): Record<string, ICarData[]> => {
       startReservationDate: new Date("2024-07-6"),
       endReservationDate: new Date("2024-07-012"),
       status: "Unavailable",
-      rating: "4.5",
+      rating: "5",
     },
   ];
 
